@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.android.sdklib.widgets.iOSViewController xmlns:android="http://schemas.android.com/apk/res/android"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" xmlns:xrt="http://schemas.android.com/apk/res/android" xrt:initialViewController="true" android:orientation="vertical" xrt:viewController="de.fotaris.ios.ui.AppViewController">
+
+<com.android.sdklib.widgets.iOSTextView
+                style="@style/XOSLabel"
+                android:textSize="15dp"
+                android:text="My IP:"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" android:id="@+id/com.android.sdklib.widgets.iOSTextView"  android:layout_marginLeft="10dp" android:layout_marginTop="20dp" android:layout_marginRight="10dp"/><com.android.sdklib.widgets.iOSTextView
+                style="@style/XOSLabel"
+                android:textSize="15dp"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left" android:id="@+id/com.android.sdklib.widgets.iOSTextView" android:layout_marginLeft="10dp" android:layout_marginRight="10dp" xrt:iboutlet="ipLabel"/><com.android.sdklib.widgets.iOSButton
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:textSize="15dp"
+                android:text="Get IP"
+                style="@style/XOSButton"
+              android:id="@+id/com.android.sdklib.widgets.iOSButton"  xrt:ibaction="touchUpInside-BtnPressed_getIp:" xrt:iboutlet="ipButton" android:layout_gravity="center"/></com.android.sdklib.widgets.iOSViewController>

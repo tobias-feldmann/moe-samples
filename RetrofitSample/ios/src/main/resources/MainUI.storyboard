@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="3ced2f46-4c43-4da4-b3ae-8e87901d93fc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--App View Controller-->
+        <scene sceneID="ec6396ee-d4a3-4e7e-bdb4-3d52fc4351e4">
+            <objects>
+                <viewController id="3ced2f46-4c43-4da4-b3ae-8e87901d93fc" customClass="AppViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="66dd4f6f-fd99-4791-b7d4-8717cfc1c990"/>
+                        <viewControllerLayoutGuide type="bottom" id="7ed262cb-9ebf-409b-bcf9-c1e6f1d5a956"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="a026ba32-45dd-42ba-abf4-df629ad68bee">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" contentMode="scaleToFill" text="My IP:" lineBreakMode="tailTruncation" id="3b038af3-6464-40f8-8cb5-64843b274fa1">
+                                <rect key="frame" x="10" y="20" width="580" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5cc0392f-6265-4da3-a40c-c51f028a6615"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" contentMode="scaleToFill" text="Label" lineBreakMode="tailTruncation" id="f562ac21-854b-4e12-afb4-a812e0bfc19b">
+                                <rect key="frame" x="10" y="50" width="580" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="51102b50-ca77-4573-8e91-5cebcccf4305"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ef9e4e7c-b794-4be7-8a4c-80d8bb7cf549">
+                                <rect key="frame" x="250" y="100" width="100" height="40"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.0" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="283a0da1-6a37-4854-ad9c-dc16d2243788"/>
+                                    <constraint firstAttribute="height" constant="40" id="b97e8a0a-297f-40a5-8bb5-5d6a9b08a8d9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <state key="normal" title="Get IP">
+                                    <color key="titleColor" red="0.0" green="0.20000000000000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="BtnPressed_getIp:" destination="3ced2f46-4c43-4da4-b3ae-8e87901d93fc" eventType="touchUpInside" id="9f779bd8-f13d-48a4-a1d0-b3e57e3aa0ca"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3b038af3-6464-40f8-8cb5-64843b274fa1" firstAttribute="leading" secondItem="a026ba32-45dd-42ba-abf4-df629ad68bee" secondAttribute="leading" priority="950" constant="10" id="31a73cc2-891e-4391-aa96-6904df1f2da8"/>
+                            <constraint firstItem="f562ac21-854b-4e12-afb4-a812e0bfc19b" firstAttribute="bottom" secondItem="ef9e4e7c-b794-4be7-8a4c-80d8bb7cf549" secondAttribute="top" priority="950" id="391253b4-ffd5-42f4-b115-5334c05c08dc"/>
+                            <constraint firstAttribute="trailing" secondItem="f562ac21-854b-4e12-afb4-a812e0bfc19b" secondAttribute="trailing" priority="900" constant="10" id="41f7082c-34a2-4565-af96-1a60a237fa95"/>
+                            <constraint firstItem="3b038af3-6464-40f8-8cb5-64843b274fa1" firstAttribute="bottom" secondItem="f562ac21-854b-4e12-afb4-a812e0bfc19b" secondAttribute="top" priority="950" id="4526e82f-1bd2-4e13-b88d-edd338a89a4a"/>
+                            <constraint firstAttribute="bottom" secondItem="ef9e4e7c-b794-4be7-8a4c-80d8bb7cf549" secondAttribute="bottom" priority="900" id="46931263-5755-43d6-b71d-66f1b1f8801f"/>
+                            <constraint firstItem="f562ac21-854b-4e12-afb4-a812e0bfc19b" firstAttribute="leading" secondItem="a026ba32-45dd-42ba-abf4-df629ad68bee" secondAttribute="leading" priority="950" constant="10" id="7ac8577f-fca8-482b-a222-d3a4136c86b4"/>
+                            <constraint firstAttribute="trailing" secondItem="3b038af3-6464-40f8-8cb5-64843b274fa1" secondAttribute="trailing" priority="900" constant="10" id="7af8472b-7d8c-4250-870d-cfa0f8642c79"/>
+                            <constraint firstItem="ef9e4e7c-b794-4be7-8a4c-80d8bb7cf549" firstAttribute="centerX" secondItem="a026ba32-45dd-42ba-abf4-df629ad68bee" secondAttribute="centerX" id="7f689652-2b10-4f45-8db5-42960654c35f"/>
+                            <constraint firstItem="3b038af3-6464-40f8-8cb5-64843b274fa1" firstAttribute="width" secondItem="f562ac21-854b-4e12-afb4-a812e0bfc19b" secondAttribute="width" priority="500" id="8a403b08-09c8-4b66-a7de-2c059e54e814"/>
+                            <constraint firstItem="3b038af3-6464-40f8-8cb5-64843b274fa1" firstAttribute="top" secondItem="a026ba32-45dd-42ba-abf4-df629ad68bee" secondAttribute="top" priority="950" constant="20" id="ebec25a2-ca5b-4401-bddc-82c54d318f04"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="ipButton" destination="ef9e4e7c-b794-4be7-8a4c-80d8bb7cf549" id="ac3c9a4e-15f7-4a2d-9dec-febd6022aba8"/>
+                        <outlet property="ipLabel" destination="f562ac21-854b-4e12-afb4-a812e0bfc19b" id="45dbd865-829b-43bb-9a68-72836c740188"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e478c134-4e72-4292-8ed1-6ceb492b910b" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="181.33333333333334" y="395.70666666666665"/>
+        </scene>
+    </scenes>
+</document>
